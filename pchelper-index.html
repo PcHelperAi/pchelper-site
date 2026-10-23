@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PC Helper</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --card: #141414;
+    --line: #262626;
+    --text: #f2f2f2;
+    --muted: #9a9a9a;
+    --accent: #7c5cff;
+    --font-display: "Space Grotesk", -apple-system, "Segoe UI", sans-serif;
+    --font-body: "Inter", -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.55;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 20px 96px; }
+  h1 { font-family: var(--font-display); font-size: 2.1rem; margin: 0 0 8px; text-wrap: balance; }
+  .tag { color: var(--muted); font-size: 1.05rem; margin: 0 0 40px; }
+  h2 { font-family: var(--font-display); font-weight: 500; font-size: 1.2rem; margin: 40px 0 10px; }
+  p { color: #d4d4d4; margin: 0 0 14px; }
+  ul { color: #d4d4d4; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin: 24px 0;
+  }
+  .pill {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--accent);
+    border: 1px solid var(--line);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); padding-top: 20px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="pill">Personal project · not for sale</span>
+    <h1>PC Helper</h1>
+    <p class="tag">A voice assistant for your own PC, with a companion Android app that keeps your phone and PC working together.</p>
+
+    <div class="card">
+      <p>PC Helper runs on Windows and listens for a wake word ("Jarvis") or a typed command, then does things on your
+      computer for you: opening apps, searching, answering questions, controlling music, taking notes, setting
+      reminders and timers, and more. It uses an AI model for understanding open-ended requests, and a small set of
+      fast built-in commands for the things you ask most.</p>
+    </div>
+
+    <h2>Phone companion app</h2>
+    <p>The Android app pairs with the PC over an end-to-end encrypted link, so you can ask your PC to do things from
+    your phone ("on my pc, open spotify"), and ask your phone to do things from the PC (read notifications, answer
+    calls, find your phone). Everything is encrypted between the two devices; nothing routes through a third party
+    that can read it.</p>
+
+    <h2>Cross-device accounts</h2>
+    <p>An optional account lets your custom commands, learned words and AI/voice keys follow you to every PC and
+    phone you log into, encrypted with a key derived from your own password — the account's own backend never sees
+    the plaintext keys, only the encrypted blobs.</p>
+
+    <h2>Why this page exists</h2>
+    <p>This is a small, genuine personal software project, not a company or a product for sale. This page exists
+    mostly so the project has a real home at <code>pchelper.is-a.dev</code>.</p>
+
+    <footer>
+      Built by an individual developer as a personal project. Not affiliated with any company.
+    </footer>
+  </div>
+</body>
+</html>
